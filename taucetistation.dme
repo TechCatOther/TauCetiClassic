@@ -199,6 +199,7 @@
 #include "code\datums\space_structures.dm"
 #include "code\datums\spell.dm"
 #include "code\datums\uplinks_items.dm"
+#include "code\datums\browser\modal.dm"
 #include "code\datums\components\_component.dm"
 #include "code\datums\components\footstep.dm"
 #include "code\datums\components\slippery.dm"
