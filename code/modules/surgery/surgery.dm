@@ -65,7 +65,7 @@
 	var/germ_level = 0
 	if(user.gloves)
 		germ_level += user.gloves.germ_level
-	else 
+	else
 		germ_level += user.germ_level
 
 	if(tool.blood_DNA && tool.blood_DNA.len) //germs from blood-stained tools

@@ -1868,6 +1868,7 @@
 #include "code\modules\surgery\appendix.dm"
 #include "code\modules\surgery\bones.dm"
 #include "code\modules\surgery\braincore.dm"
+#include "code\modules\surgery\cortical_stack.dm"
 #include "code\modules\surgery\eye.dm"
 #include "code\modules\surgery\face.dm"
 #include "code\modules\surgery\gender_reassignment.dm"

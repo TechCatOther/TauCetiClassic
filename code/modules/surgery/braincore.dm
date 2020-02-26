@@ -50,7 +50,7 @@
 	/obj/item/weapon/kitchenknife = 75,
 	/obj/item/weapon/shard = 50,
 	)
-	allowed_species = list("exclude", IPC, DIONA)
+	allowed_species = list("exclude", IPC, DIONA, VOX)
 
 	min_duration = 80
 	max_duration = 100
@@ -127,7 +127,7 @@
 	allowed_tools = list(
 	/obj/item/brain = 100
 	)
-	allowed_species = list("exclude", IPC, DIONA)
+	allowed_species = list("exclude", IPC, DIONA, VOX)
 
 	min_duration = 60
 	max_duration = 80
@@ -147,7 +147,7 @@
 	"<span class='notice'>You inserts [tool] into [target]'s [BP.name].</span>")
 
 	if(!istype(tool, /obj/item/brain))
-		return 
+		return
 
 	//this might actually be outdated since barring badminnery, a debrain'd body will have any client sucked out to the brain's internal mob. Leaving it anyway to be safe. --NEO
 	if(target.key)//Revised. /N
@@ -171,6 +171,8 @@
 //////////////////////////////////////////////////////////////////
 //				BRAIN DAMAGE FIXING								//
 //////////////////////////////////////////////////////////////////
+
+
 
 /datum/surgery_step/brain/bone_chips
 	allowed_tools = list(
@@ -357,3 +359,10 @@
 /datum/surgery_step/slime/saw_core/fail_step(mob/living/user, mob/living/carbon/slime/target, target_zone, obj/item/tool)
 	user.visible_message("<span class='warning'>[user]'s hand slips, causing \him to miss the core!</span>",
 	"<span class='warning'>Your hand slips, causing you to miss the core!</span>")
+
+
+
+
+
+
+
